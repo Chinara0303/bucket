@@ -3,4 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
+#nav-bar{
+    background-color: #f6f7f8;
+    a,sup{
+      text-decoration: none;
+      transition: .3s;
+      font-size: 20px;
+      color: #ff059f96;
+    }
+    p,i{
+      &:hover{
+        color: rgb(255, 6, 222);
+      }
+      
+    }
+   
+}
+
+
+
+
+#tbody{
+  list-style: none;
+  tr{
+    width: 80%;
+    margin: auto;
+    img{
+      width: 200px;
+      height: 100px;
+    }
+    .remove {
+      &:hover{
+        cursor: pointer;
+      }
+      
+    }
+  }
   
+}
+

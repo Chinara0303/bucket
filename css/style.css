@@ -5,110 +5,37 @@
           box-sizing: border-box;
 }
 
-.search-bar {
-  cursor: pointer;
+#nav-bar {
+  background-color: #f6f7f8;
 }
 
-#search-section {
-  background-color: aqua;
-  opacity: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
+#nav-bar a, #nav-bar sup {
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 20px;
+  color: #ff059f96;
 }
 
-#search-section input {
-  border: none;
-  background-color: transparent;
-  outline: none;
+#nav-bar p:hover, #nav-bar i:hover {
+  color: #ff06de;
+}
+
+#tbody {
+  list-style: none;
+}
+
+#tbody tr {
   width: 80%;
-  font-size: 25px;
-  padding: 5rem 5px;
+  margin: auto;
 }
 
-.active {
-  opacity: 1 !important;
+#tbody tr img {
+  width: 200px;
+  height: 100px;
 }
 
-i {
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.angel {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.lang {
-  position: relative;
+#tbody tr .remove:hover {
   cursor: pointer;
-}
-
-.lang #options {
-  position: absolute;
-  left: -100px;
-  opacity: 0;
-  -webkit-transition: .4s;
-  transition: .4s;
-  top: 40px;
-  background-color: #fff;
-  width: 150px;
-  -webkit-box-shadow: -1px 1px 3px 3px #e0dfdf;
-          box-shadow: -1px 1px 3px 3px #e0dfdf;
-}
-
-.lang #options::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  height: 20px;
-  right: 10px;
-  top: -16px;
-  background-color: white;
-}
-
-#phones {
-  -webkit-animation: phone 1s linear infinite;
-          animation: phone 1s linear infinite;
-}
-
-@-webkit-keyframes phone {
-  25% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  50% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  75% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-}
-
-@keyframes phone {
-  25% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  50% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  75% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-  100% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
 }
 /*# sourceMappingURL=style.css.map */
